@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #462037;
+    color: #f9aaad;
+    overflow-x: hidden;
+    font-size: 16px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #140e1c;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #c5757c;
+  }
+  
+  header nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #fadcd5;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #c5757c;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(135deg #462037);
+  }
+  
+  .hero .hero-content {
+    max-width: 700px;
+    padding: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #c5757c;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #fadcd5;
+  }
+  
+  .hero .btn {
+    padding: 15px 30px;
+    background: #c5757c;
+    color: #fadcd5;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    background: #fadcd5;
+    color: #c5757c;
+  }
+  
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #140e1c;
+  }
+  
+  .about .text {
+    max-width: 500px;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #c5757c;
+  }
+  
+  .about p {
+    font-size: 1rem;
+    color: #fadcd5;
+    line-height: 1.6;
+  }
+  
+  .about img {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .services {
+    padding: 50px;
+    background: #462037;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #c5757c;
+  }
+  
+  .services .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .services .service {
+    background: #1b0c1a;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .services .service:hover {
+    background: #a1525f;
+    transform: translateY(-10px);
+  }
+  
+  .services .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .services .service p {
+    font-size: 1rem;
+    color: #fadcd5;
+  }
+  
+  .contact {
+    padding: 50px;
+    background: #140e1c;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #c5757c;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #6d3c52;
+    color: #f9aaad;
+  }
+  
+  .contact button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #c5757c;
+    color: #fadcd5;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact button:hover {
+    background: #fadcd5;
+    color: #c5757c;
+  }
+  
+  footer {
+    padding: 20px;
+    background: #462037;
+    text-align: center;
+    color: #f9aaad;
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about img {
+      margin-bottom: 20px;
+    }
+  
+    .services .service-grid {
+      grid-template-columns: 1fr;
+    }
+  }
